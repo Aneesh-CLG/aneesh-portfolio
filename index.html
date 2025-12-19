@@ -10,10 +10,10 @@
   <meta property="og:description" content="Projects in geospatial analysis, ML, IoT retail automation, and full-stack apps." />
   <meta property="og:type" content="website" />
 
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Fonts (safe HTML links) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -45,11 +45,15 @@
   </header>
 
   <main id="main">
+    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
           <p class="pill">AI & Data Science • Python • ML • Cloud</p>
-          <h1>Building scalable, practical ML and data solutions with clean engineering.</h1>
+
+          <!-- Fixed: no <br> inside heading -->
+          <h1>Machine learning and data projects that are clear, reliable, and production‑ready.</h1>
+
           <p class="lead">
             Recent B.Tech (CSE — AI & Data Science) focused on machine learning, data pipelines, and cloud-ready delivery.
             I build models, automate workflows, and ship end-to-end projects that are easy to understand and review.
@@ -98,8 +102,6 @@
 
           <div class="quick-links">
             <a class="chip" href="#contact">Email</a>
-
-            <!-- Fixed: real URLs (no markdown in href) -->
             <a class="chip" href="https://www.linkedin.com/in/aneesh-mada-211343369/" target="_blank" rel="noopener">LinkedIn</a>
             <a class="chip" href="https://github.com/Aneesh-CLG" target="_blank" rel="noopener">GitHub</a>
           </div>
@@ -118,112 +120,97 @@
         </div>
 
         <div class="grid-cards">
-          <!-- Project 1 -->
           <article class="card">
-            <a class="card-media" href="#" aria-label="Geospatial Coastal Erosion Analysis (add project link)">
+            <div class="card-media">
               <img src="assets/project-coastal.jpg" alt="Satellite imagery / coastline visualization" />
               <span class="tag">Geospatial • CV • Pipelines</span>
-            </a>
+            </div>
             <div class="card-body">
               <h3>Geospatial Coastal Erosion Analysis</h3>
               <p class="muted">Automated shoreline change detection using multi-temporal Landsat imagery.</p>
-
               <ul class="bullets">
                 <li>Built an end-to-end data pipeline for shoreline extraction and change monitoring.</li>
                 <li>Implemented NDWI, Canny Edge Detection, and U-Net segmentation for shoreline delineation.</li>
                 <li>Computed erosion/accretion rates using EPR, LRR, and WLR statistical methods.</li>
                 <li>Created reproducible preprocessing + analysis workflows in Python.</li>
-                <li>Developed a full-stack website to present results (JavaScript frontend/backend, MongoDB storage).</li>
+                <li>Developed a full-stack website to present results (JavaScript, MongoDB).</li>
               </ul>
-
               <div class="stack">
                 <span>Python</span><span>OpenCV</span><span>U-Net</span><span>EDA</span><span>JavaScript</span><span>MongoDB</span>
               </div>
-
               <div class="card-actions">
-                <a class="btn btn-small" href="#" target="_blank" rel="noopener">Case study</a>
-                <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Code</a>
+                <!-- Safe placeholders: no target="_blank" on empty links -->
+                <a class="btn btn-small" href="#">Case study</a>
+                <a class="btn btn-small btn-ghost" href="#">Code</a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2 -->
           <article class="card">
-            <a class="card-media" href="#" aria-label="IPO Success Predictor (add project link)">
+            <div class="card-media">
               <img src="assets/project-ipo.jpg" alt="Analytics dashboard / charts screenshot" />
               <span class="tag">ML • Features • Analytics</span>
-            </a>
+            </div>
             <div class="card-body">
               <h3>IPO Success Predictor</h3>
               <p class="muted">Predicts IPO performance within six months using engineered financial + sentiment signals.</p>
-
               <ul class="bullets">
-                <li>Performed data cleaning, EDA, and feature engineering for model-ready inputs.</li>
+                <li>Performed cleaning, EDA, and feature engineering for model-ready inputs.</li>
                 <li>Trained and compared ML models for performance and interpretability.</li>
                 <li>Built a simple analytics dashboard to present insights clearly.</li>
               </ul>
-
               <div class="stack">
                 <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>EDA</span><span>Visualization</span>
               </div>
-
               <div class="card-actions">
-                <a class="btn btn-small" href="#" target="_blank" rel="noopener">Case study</a>
-                <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Code</a>
+                <a class="btn btn-small" href="#">Case study</a>
+                <a class="btn btn-small btn-ghost" href="#">Code</a>
               </div>
             </div>
           </article>
 
-          <!-- Project 3 -->
           <article class="card">
-            <a class="card-media" href="#" aria-label="Sense-Pak Smart Shopping Trolley (add project link)">
+            <div class="card-media">
               <img src="assets/project-sensepak.jpg" alt="Smart trolley / IoT retail visual" />
               <span class="tag">IoT • Automation • Systems</span>
-            </a>
+            </div>
             <div class="card-body">
               <h3>Sense-Pak — Intelligent Smart Shopping Trolley</h3>
               <p class="muted">Sensor-driven retail workflow for automated billing and inventory updates.</p>
-
               <ul class="bullets">
                 <li>Implemented real-time cost calculation and SMS-based UPI checkout flow.</li>
                 <li>Automated inventory deduction and transaction notifications.</li>
                 <li>Focused on system integration and reliable event-driven processing.</li>
               </ul>
-
               <div class="stack">
                 <span>Automation</span><span>Real-time processing</span><span>Systems integration</span>
               </div>
-
               <div class="card-actions">
-                <a class="btn btn-small" href="#" target="_blank" rel="noopener">Case study</a>
-                <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn btn-small" href="#">Case study</a>
+                <a class="btn btn-small btn-ghost" href="#">Demo</a>
               </div>
             </div>
           </article>
 
-          <!-- Project 4 -->
           <article class="card">
-            <a class="card-media" href="#" aria-label="Inventory Management App (add project link)">
+            <div class="card-media">
               <img src="assets/project-inventory.jpg" alt="Web app UI screenshot" />
               <span class="tag">Full-stack • Auth • NoSQL</span>
-            </a>
+            </div>
             <div class="card-body">
               <h3>Inventory Management (Full‑Stack)</h3>
               <p class="muted">Web app with authentication and database-backed inventory operations.</p>
-
               <ul class="bullets">
                 <li>Built React + Node.js app with responsive UI and routing.</li>
                 <li>Implemented authentication and multi-user data workflows.</li>
-                <li>Maintained product datasets with MongoDB for inventory and Sense‑Pak related work.</li>
+                <li>Maintained product datasets with MongoDB for inventory and related work.</li>
               </ul>
-
               <div class="stack">
                 <span>React</span><span>Node.js</span><span>MongoDB</span><span>CSS</span>
               </div>
-
               <div class="card-actions">
-                <a class="btn btn-small" href="#" target="_blank" rel="noopener">Live</a>
-                <a class="btn btn-small btn-ghost" href="#" target="_blank" rel="noopener">Code</a>
+                <a class="btn btn-small" href="#">Live</a>
+                <a class="btn btn-small btn-ghost" href="#">Code</a>
               </div>
             </div>
           </article>
@@ -231,10 +218,7 @@
 
         <div class="callout">
           <div class="callout-title">Make this recruiter-ready</div>
-          <p>
-            For each project, add: 1 strong image, 1 sentence on impact, 1 metric (speedup, accuracy, runtime, dataset size),
-            and a short “How to run” section in the GitHub README.
-          </p>
+          <p>For each project, add 1 strong image, 1 impact sentence, and 1 metric. Add a short “How to run” section in the GitHub README.</p>
         </div>
       </div>
     </section>
@@ -307,7 +291,7 @@
                 <li>Developed a KNN-based approach for unstructured Twitter data.</li>
                 <li>Handled data cleaning, feature engineering, EDA, and visualization for model development.</li>
                 <li>Used AI tooling for faster debugging and evaluation while maintaining reproducibility.</li>
-                <li>Collaborated with a team and delivered components on schedule across parallel tasks.</li>
+                <li>Collaborated with a team and delivered components on schedule.</li>
               </ul>
             </div>
           </div>
@@ -335,9 +319,9 @@
           <div class="panel">
             <h3>Leadership & Activities</h3>
             <ul class="bullets">
-              <li><strong>Head of Workshops Team</strong> — DAKSH Technical Fest (planning, coordination, technical sessions)</li>
-              <li><strong>Member</strong> — Drone Club (FreeCAD exposure and design basics)</li>
-              <li><strong>Member</strong> — English Literary Club (public speaking, debates, skits; stronger presentation)</li>
+              <li><strong>Head of Workshops Team</strong> — DAKSH Technical Fest</li>
+              <li><strong>Member</strong> — Drone Club (FreeCAD exposure)</li>
+              <li><strong>Member</strong> — English Literary Club (public speaking, debates, skits)</li>
             </ul>
           </div>
         </div>
@@ -360,7 +344,6 @@
           <p class="section-sub">Recruiters should be able to reach you in one click.</p>
 
           <div class="contact-cards">
-            <!-- Fixed: valid mailto -->
             <a class="contact-card" href="mailto:Aneesh.atcollege@gmail.com">
               <div class="cc-k">Email</div>
               <div class="cc-v">Aneesh.atcollege@gmail.com</div>
@@ -371,7 +354,6 @@
               <div class="cc-v">+91-8527214097</div>
             </a>
 
-            <!-- Fixed: real URLs (no markdown in href) -->
             <a class="contact-card" href="https://www.linkedin.com/in/aneesh-mada-211343369/" target="_blank" rel="noopener">
               <div class="cc-k">LinkedIn</div>
               <div class="cc-v">linkedin.com/in/aneesh-mada-211343369</div>
@@ -415,4 +397,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-
